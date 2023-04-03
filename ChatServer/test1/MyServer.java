@@ -5,14 +5,13 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class MyServer {
     public static void main(String[] args) {
         try {
-            ServerSocket ss = new ServerSocket(1111);
+            ServerSocket ss = new ServerSocket(5000);
             System.out.println("Server is waiting for the Client");
 
             Socket s = ss.accept();

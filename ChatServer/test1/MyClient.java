@@ -10,7 +10,7 @@ import java.net.Socket;
 public class MyClient {
     public static void main(String[] args) {
         try {
-            Socket s = new Socket("103.183.30.160", 1111);
+            Socket s = new Socket("127.0.0.1", 5000);
             DataOutputStream dos = new DataOutputStream(s.getOutputStream());
             DataInputStream din = new DataInputStream(s.getInputStream());
 
